@@ -7,6 +7,7 @@ Achteraf: Plaats een kopie van de retro in je eigen repository.
 
 ## Wat ging goed?
  - Voorbeeld: We gebruikten de Pomedoro techniek en dat was heel fijn om mee te werken.
+ - 
 
 ## Wat kan beter?
  - Voorbeeld: We deden iets te lang over onze standups.

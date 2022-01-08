@@ -38,6 +38,9 @@ AZ: eu-central-1a
 
 ### Gebruikte bronnen
 
+https://docs.aws.amazon.com/directoryservice/latest/admin-guide/gsg_create_vpc.html
+https://www.youtube.com/watch?v=ge2AYD0iIM4
+
 ## 15.2 
 Create an additional public subnet with the following requirements:
 VPC: Lab VPC

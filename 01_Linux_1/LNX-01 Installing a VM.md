@@ -33,5 +33,5 @@ Ubuntu virtual machine on your laptop. Below is screenshot of installed Ubuntu i
 ![UbuntuinLaptop](/00_includes/LNX01/Nieuwemap/UbuntuinLaptop.png)
 
 3.2 Snapshot of VM
-![UbuntuVM](00_includes/LNX01/Nieuwemap/UbuntuVM.png)
+![UbuntuVM](/00_includes/LNX01/Nieuwemap/UbuntuVM.png)
 

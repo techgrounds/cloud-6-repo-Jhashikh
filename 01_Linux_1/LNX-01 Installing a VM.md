@@ -29,6 +29,9 @@ https://www.tecmint.com/install-virtualbox-guest-additions-in-ubuntu/ ]
 ### Resultaat
 
 3.1 
+Ubuntu virtual machine on your laptop. Below is screenshot of installed Ubuntu in latpop
 ![UbuntuinLaptop](/00_includes/LNX01/Nieuwemap/UbuntuinLaptop.png)
-![ClientHello](/00_includes/Cloud/ClientHelloMessage.png)
+
+3.2 Snapshot of VM
+![UbuntuVM](00_includes/LNX01/Nieuwemap/UbuntuVM.png)
 

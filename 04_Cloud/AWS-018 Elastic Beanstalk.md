@@ -23,21 +23,52 @@ Elastic Beanstalk automatically scales your application up and down based on you
 You have the freedom to select the AWS resources, such as Amazon EC2 instance type and processor type to run the workload on, that are optimal for your application. You also retain full control over the AWS resources powering your application. If you decide you want to take over some (or all) of the elements of your infrastructure, you can do so seamlessly by using Elastic Beanstalk's management capabilities.
 
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+* (EB CLI) - Elastic Beanstalk command line interface -The EB CLI is a command line interface for AWS Elastic Beanstalk that provides interactive commands that simplify creating, updating and monitoring environments from a local repository. Use the EB CLI as part of your everyday development and testing cycle as an alternative to the Elastic Beanstalk console.
+
+*  Runtime - The programming language-specific runtime software (framework, libraries, interpreter, vm, etc.) required to run your application code.
+
+* Elastic Beanstalk Components - 
+Software components that Elastic Beanstalk adds to a platform to enable Elastic Beanstalk functionality. For example, the enhanced health agent is necessary for gathering and reporting health information.
+
+* Platform - A combination of an operating system (OS), runtime, web server, application server, and Elastic Beanstalk components. Platforms provide components that are available to run your application.
+
+* Platform Version - 
+A combination of specific versions of an operating system (OS), runtime, web server, application server, and Elastic Beanstalk components. You create an Elastic Beanstalk environment based on a platform version and deploy your application to it.
+
+   A platform version has a semantic version number of the form X.Y.Z, where X is the major version, Y is the minor version, and Z is the patch version.
+
+* Platform Branch - A line of platform versions sharing specific (typically major) versions of some of their components, such as the operating system (OS), runtime, or Elastic Beanstalk components. For example: Python 3.6 running on 64bit Amazon Linux; IIS 10.0 running on 64bit Windows Server 2016. Each successive platform version in the branch is an update to the previous one.
+
+* Platform Update - A release of new platform versions that contain updates to some components of the platform—OS, runtime, web server, application server, and Elastic Beanstalk components. Platform updates follow semantic version taxonomy, and can have several levels:
+
+  - Major update – An update that has changes that are incompatible with existing platform versions. You might need to modify your application to run correctly on a new major version. A major update has a new major platform version number.
+
+  - Minor update – An update that adds functionality that is backward compatible with an existing platform version. You don't need to modify your application to run correctly on a new minor version. A minor update has a new minor platform version number.
+
+  - Patch update – An update that consists of maintenance releases (bug fixes, security updates, and performance improvements) that are backward compatible with an existing platform version. A patch update has a new patch platform version number.
+
+* Managed Updates - An Elastic Beanstalk feature that automatically applies patch and minor updates to the operating system (OS), runtime, web server, application server, and Elastic Beanstalk components for an Elastic Beanstalk supported platform version. A managed update applies a newer platform version in the same platform branch to your environment. You can  configure managed updates to apply only patch updates, or minor and patch updates. You can also disable managed updates completely
+
 
 ## Opdracht
 
 18.1 What does it mean by AWS Elastic Beanstalk ?
+
 18.2 How does AWS Elastic Beanstalk fit or replace in a classic setting?
+
 18.3 How can I combine AWS Elastic Beanstalk with other services?
+
 18.4 What is the difference between AWS Elastic Beanstalk and other similar services?
 
 
 ### Gebruikte bronnen
-[https://aws.amazon.com/elasticbeanstalk/]
+[https://aws.amazon.com/elasticbeanstalk/
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/GettingStarted.CreateApp.html
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-glossary.html]
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+No issues experienced
 
 ## Resultaat
 
@@ -52,6 +83,24 @@ AWS Elastic Beanstalk automates the details of capacity provisioning, load balan
 
 
 ### 18.3 How can I combine AWS Elastic Beanstalk with other services?
+
+To run the  application on AWS resources, Elastic Beanstalk takes the following actions. They take about five minutes to complete.
+
+1. Creates an Elastic Beanstalk application named getting-started-app.
+
+2. Launches an environment named GettingStartedApp-env with these AWS resources:
+
+* An Amazon Elastic Compute Cloud (Amazon EC2) instance (virtual machine)
+
+* An Amazon EC2 security group
+
+* An Amazon Simple Storage Service (Amazon S3) bucket
+
+* Amazon CloudWatch alarms
+
+* An AWS CloudFormation stack
+
+* A domain name
 
 ### 18.4 What is the difference between AWS Elastic Beanstalk and other similar services?
 

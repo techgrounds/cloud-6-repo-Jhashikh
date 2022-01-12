@@ -117,4 +117,8 @@ ElastiCache, for starters, enhances the performance of web applications by quick
 
 Amazon CloudFront seeks to boost the performance of web applications too. But, unlike ElastiCache, it acts as a Content Delivery Network (CDN) — which speeds up the delivery of web-based assets through endpoint caches that are positioned close to the traffic source. In other words, your web visitors load content from the closest caching server, instead of relying entirely on the original hosting server. 
 
+**Difference between Cloudflare &Amazon-CloudFront**
+
+![CloudflareCloudfront](00_includes/Cloud/cloudflarevscloudfront.png)
+
 

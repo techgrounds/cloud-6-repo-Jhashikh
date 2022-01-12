@@ -52,6 +52,7 @@ https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.
 
 ### 19.1 What is cloudfront?
 Explained in introduction
+![Cloudfront](/00_includes/Cloud/Cloudfront.png)
 
 ### 19.2 How does cloudfront fit or replace in a classic setting?
 

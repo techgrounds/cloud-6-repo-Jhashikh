@@ -122,3 +122,9 @@ Amazon CloudFront seeks to boost the performance of web applications too. But, u
 ![CloudflareCloudfront](/00_includes/Cloud/cloudflarevscloudfront.png)
 
 
+Cloudflare and Amazon CloudFront offer similarly large networks of data centers to distribute copies of data. Amazon CloudFront has 140 locations, while Cloudflare has about 150. However, operational differences between the two affect their features and overall user experience.
+
+Data Delivery
+Cloudflare uses a reverse-proxy architecture to manage data. Rather than use cloud providers' default name servers, websites and apps are configured to use Cloudflare's nameservers. Requests go through Cloudflare servers, which determine how to route traffic.
+
+In Amazon CloudFront, IT teams don't change name server settings. Instead, they set up copies -- called distributions -- of the data they want to distribute. These data distributions have unique URLs, and admins use the URLs to help direct requests to the CloudFront CDN. The tool decides which server within the network should respond to a CloudFront URL request based on the geographic origin of the request.

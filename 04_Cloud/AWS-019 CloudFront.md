@@ -119,6 +119,6 @@ Amazon CloudFront seeks to boost the performance of web applications too. But, u
 
 **Difference between Cloudflare &Amazon-CloudFront**
 
-![CloudflareCloudfront](00_includes/Cloud/cloudflarevscloudfront.png)
+![CloudflareCloudfront](/00_includes/Cloud/cloudflarevscloudfront.png)
 
 

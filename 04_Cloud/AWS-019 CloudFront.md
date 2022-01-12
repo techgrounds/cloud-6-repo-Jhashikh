@@ -41,17 +41,20 @@ Scale automatically to deliver software, game patches, and IoT over-the-air (OTA
 https://aws.amazon.com/cloudfront/
 https://app.mindmup.com/
 https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
+https://aws.amazon.com/cloudfront/faqs/
+https://www.cloudzero.com/blog/amazon-elasticache
 
 
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+No issues faced.
 
 ### Resultaat
 
 ### 19.1 What is cloudfront?
 Explained in introduction
+
 ![Cloudfront](/00_includes/Cloud/Cloudfront.png)
 
 ### 19.2 How does cloudfront fit or replace in a classic setting?
@@ -64,6 +67,8 @@ CloudFront speeds up the distribution of your content by routing each user reque
 
 You also get increased reliability and availability because copies of your files (also known as objects) are now held (or cached) in multiple edge locations around the world.
 
+Amazon CloudFront lets you quickly obtain the benefits of high performance content delivery without negotiated contracts or high prices. Amazon CloudFront gives all developers access to inexpensive, pay-as-you-go pricing – with a self-service model. Developers also benefit from tight integration with other Amazon Web Services. The solution is simple to use with Amazon S3, Amazon EC2, and Elastic Load Balancing as origin servers, giving developers a powerful combination of durable storage and high performance delivery. Amazon CloudFront also integrates with Amazon Route 53 and AWS CloudFormation for further performance benefits and ease of configuration.
+
 ### 19.3 How can I combine Cloudfront with other services?
 
 **Protection against Network and Application Layer Attacks**
@@ -73,3 +78,43 @@ Amazon CloudFront, AWS Shield, AWS Web Application Firewall (WAF), and Amazon Ro
 **SSL/TLS Encryptions and HTTPS**
 
 With Amazon CloudFront, content, APIs or applications can be delivered over HTTPS using the latest version Transport Layer Security (TLSv1.3) to encrypt and secure communication between viewer clients and CloudFront. AWS Certificate Manager (ACM) can be used to easily create a custom SSL certificate and deploy to an CloudFront distribution for free. ACM automatically handles certificate renewal, eliminating the overhead and costs of a manual renewal process. Additionally, CloudFront provides a number of TLS optimizations and advanced capabilities such as full/half bridge HTTPS connections, OCSP stapling, Session Tickets, Perfect Forward Secrecy, TLS Protocol Enforcements and Field-Level Encryption.
+
+**Cloudfront setup to deliver our content**
+
+When we configure Cloudfront to deliver our content, we specify origin servers, like an Amazon S3 bucket or your own HTTP server, from which CloudFront gets your files which will then be distributed from CloudFront edge locations all over the world.
+
+**Enabling redundancy for origins**
+
+CloudFront supports multiple origins for backend architecture redundancy. CloudFront’s native origin failover capability automatically serves content from a backup origin when the primary origin is unavailable. The origins set up with origin failover can be any combination of AWS origins like EC2 instances, Amazon S3 buckets, or Media Services, or non-AWS origins like an on-premises HTTP server. Additionally, you can implement advanced origin failover capabilities with CloudFront and Lambda@Edge.
+
+**Edge Computing**
+
+Amazon CloudFront offers programmable and secure edge CDN computing capabilities through CloudFront Functions and AWS Lambda@Edge.
+
+**Real-time Metrics**
+
+Amazon CloudFront is integrated with Amazon CloudWatch, and automatically publishes six operational metrics per distribution, which are displayed in a set of graphs in the CloudFront console. Additional, granular metrics are available with simple click on the console or via API.
+
+**Standard and Real-time Logging**
+
+CloudFront provides two ways to log the requests delivered from your distributions: Standard logs and Real-time logs. 
+
+Standard logs are delivered to the Amazon S3 bucket of your choice (log records are delivered within minutes of a viewer request). 
+
+ CloudFront real-time logs are delivered to the data stream of your choice in Amazon Kinesis Data Streams (log records are delivered within seconds of a viewer request). You can choose the sampling rate for your real-time logs—that is, the percentage of requests for which you want to receive real-time log records. 
+
+ ### 19.4 What is the difference between Cloudfront and other similar services?
+
+ **Difference between CloudFront & Amazon S3**
+
+Amazon S3 is a Simple Storage Service, this can be used large amount of information i.e. Videos, Images, PDF etc. CloudFront is a Content Delivery Network, which is closer to the end user and is used to make the information available on Amazon S3 in the least possible time
+
+**difference between ElastiCache and CloudFront**
+
+While AWS ElastiCache and AWS CloudFront are both caching solutions, their individual approaches and overall framework differ greatly. 
+
+ElastiCache, for starters, enhances the performance of web applications by quickly retrieving information from fully-managed in-memory data stores. It utilizes Memcached and Redis, and manages to considerably reduce the time your applications would, otherwise, take to read data from disk-based databases. 
+
+Amazon CloudFront seeks to boost the performance of web applications too. But, unlike ElastiCache, it acts as a Content Delivery Network (CDN) — which speeds up the delivery of web-based assets through endpoint caches that are positioned close to the traffic source. In other words, your web visitors load content from the closest caching server, instead of relying entirely on the original hosting server. 
+
+

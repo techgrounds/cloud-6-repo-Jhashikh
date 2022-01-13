@@ -4,6 +4,8 @@ Amazon Elastic File System (Amazon EFS) is a simple, serverless, set-and-forget,
 
 Amazon EFS offers four storage classes: two standard storage classes, including Amazon EFS Standard and Amazon EFS Standard-Infrequent Access (EFS Standard-IA), and two One Zone storage classes, including Amazon EFS One Zone and Amazon EFS One Zone-Infrequent Access (EFS One Zone-IA).
 
+![EFSWork](/00_includes/Cloud/EFSWork.png)
+
 
 ## Use cases
 **Simplify DevOps**

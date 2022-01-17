@@ -24,6 +24,8 @@ https://aws.amazon.com/ecs/faqs/
 
 **26.1 What does it mean by Amazon ECS ?**
 
+![ECSWork](/00_includes/Cloud/AmazonECS.png)
+
 **26.2 How does Amazon ECS fit or replace in a classic setting?**
 
 **26.3 How can I combine Amazon ECS with other services?**

@@ -40,7 +40,7 @@ Easy to use and scale, Amazon EFS offers the performance and consistency needed 
 
 ### Gebruikte bronnen
 https://aws.amazon.com/efs/
-
+https://aws.amazon.com/getting-started/tutorials/create-network-file-system/
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 
@@ -48,5 +48,8 @@ https://aws.amazon.com/efs/
 **21.1 Where can I find Elastic File System service in the console?**
 
 **21.2 How do I enable EFS?**
+There are several ways to get started with Amazon EFS. You can use the AWS Management Console, the AWS Software Development Kits, or the AWS Command Line Interface tools.
+
+Amazon EFS is free to get started if you are already a customer. 
 
 **21.3 How can I link EFS service to other resources?**

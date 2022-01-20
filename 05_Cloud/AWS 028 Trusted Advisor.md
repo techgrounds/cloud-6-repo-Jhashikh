@@ -19,6 +19,7 @@ Checks from Trusted Advisor analyzes your AWS environment and recommends best pr
 * **Service quotas**
 
   Service quotas, also referred to as Service limits, are the maximum number of service resources or operations that apply to an account or a Region. Trusted Advisor can notify you if you use more than 80% of a service quota. You can then follow recommendations to delete resources or request a quota increase. Check results are based on a snapshot, so your current usage might vary.
+  ![TrustedAdvisor](/00_includes/Cloud/TrustedAdvisorbestpracticechecks.png)
 
 ## Key-terms
 [Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]

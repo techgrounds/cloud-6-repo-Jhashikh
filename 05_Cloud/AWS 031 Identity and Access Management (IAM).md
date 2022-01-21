@@ -16,7 +16,12 @@ Achieving least privilege is a continuous cycle to grant the right fine-grained 
 Attribute-based access control (ABAC) is an authorization strategy for creating fine-grained permissions based on user attributes, such as department, job role, and team name. With ABAC, you can reduce the number of distinct permissions you need for creating fine-grained controls in your AWS account.
 
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+ * **IAM role**
+ An IAM role is an IAM entity that defines a set of permissions for making AWS service requests. IAM roles are not associated with a specific user or group. Instead, trusted entities assume roles, such as IAM users, applications, or AWS services such as EC2.
+
+* **user**
+A user is a unique identity recognized by AWS services and applications. Similar to a login user in an operating system like Windows or UNIX, a user has a unique name and can identify itself using familiar security credentials such as a password or access key. A user can be an individual, system, or application requiring access to AWS services. IAM supports users (referred to as "IAM users") managed in AWS's identity management system, and it also enables you to grant access to AWS resources for users managed outside of AWS in your corporate directory (referred to as "federated users").
+
 
 ## Opdracht
 ### Gebruikte bronnen

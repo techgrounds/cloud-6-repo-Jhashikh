@@ -16,6 +16,9 @@ Event history provides a 90-day history of control plane actions for free. As pa
 * **CloudTrail Lake**
 AWS CloudTrail Lake is a managed audit and security lake, allowing customers to aggregate, immutably store, and query their activity logs for auditing, security investigation, and operational troubleshooting.
 
+* **CloudTrail log file integrity validation**
+CloudTrail log file integrity validation feature allows you to determine whether a CloudTrail log file was unchanged, deleted, or modified since CloudTrail delivered it to the specified Amazon S3 bucket.
+
 ## Opdracht
 ### Gebruikte bronnen
 https://aws.amazon.com/cloudtrail/

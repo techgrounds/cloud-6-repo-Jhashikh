@@ -28,4 +28,4 @@ https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide
 How it works
 AWS CloudTrail monitors and records account activity across your AWS infrastructure, giving you control over storage, analysis, and remediation actions.
 
-
+![Cloudtrail](/00_includes/Cloud/AWSCloudTrail.png)

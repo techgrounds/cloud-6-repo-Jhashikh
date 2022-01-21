@@ -35,6 +35,8 @@ https://aws.amazon.com/config/
 
 ### Resultaat
 
+![Config](/00_includes/Cloud/Config.png)
+
 ### Integrations
 * **AWS Organizations**
 

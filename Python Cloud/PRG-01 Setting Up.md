@@ -61,7 +61,6 @@ Python has a set of keywords that are reserved words that cannot be used as vari
 | while     | 	To create a while loop
 | with      | Used to simplify exception handling
 | yield     | To end a function, returns a generator
-|-----------|------------------------------|
 
 	
 	

@@ -67,4 +67,5 @@ Find out what data type the output of input() is. See if it is different for dif
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+### Py 03.1 
+![Py03.1](/00_includes/Python/Py%2003.1.png)

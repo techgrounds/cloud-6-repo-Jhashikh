@@ -101,10 +101,22 @@ https://www.youtube.com/watch?v=o3s4VqlMsT8
 
 ### Resultaat
 * Py-01.1 :- Install the latest version of Python from https://www.python.org/
+![Pythoninstallation](/00_includes/Python/Python%20Latest%20version.png)
 
 * Py-01.2 :- Install VS Code from https://code.visualstudio.com/download
 
+![VSCode installtion](/00_includes/Python/VS%20Code%20Download.png)
+
 * Py-01.3 :- Install the Python plug-in in VS Code.
+![Pythonplugin](/00_includes/Python/Python%20Plugin%20in%20VS%20Code.png)
+
+![Pythonplugin1](/00_includes/Python/Python%20Plugin%20in%20VS%20Code%201.png)
 
 * Py- 01.4 :- Write the following Python code. The output in the terminal should be the text “Hello world!”
 ![Helloworld](/00_includes/Python/Helloworld.png)
+
+![HelloWorldPrint](/00_includes/Python/Hello%20World%20Python.png)
+
+![Scripting](/00_includes/Python/Scripting%20in%20Python.png)
+
+

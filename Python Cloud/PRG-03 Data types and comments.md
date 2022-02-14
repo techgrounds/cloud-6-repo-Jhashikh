@@ -27,13 +27,13 @@ Comments are lines that do not get processed as code. This can be used for multi
 Python has the following data types built-in by default, in these categories:
 | Name         |Type   | Example   |
 |--------------|-------|----------|
-| Text Type    | str   | x = "Hello World"
-|Numeric Types | int, float, complex |
-|Sequence Types| list, tuple, range |
-| Mapping Type  | dict |
-| Set Types     | set, frozenset |
-|Boolean Type   | bool |
-|Binary Types   | bytes, bytearray, memoryview
+| Text Type    | str   | string = "Hello World"
+|Numeric Types | int, float, complex | int = 20 , float = 20.5 , complex = 1j 
+|Sequence Types| list, tuple, range | list = ["apple", "banana", "cherry"] , 	tuple = ("apple", "banana", "cherry") , range = range(6) 
+| Mapping Type  | dict | dict = {"name" : "John", "age" : 36}
+| Set Types     | set, frozenset | set = {"apple", "banana", "cherry"} , frozenset = frozenset({"apple", "banana", "cherry"})
+|Boolean Type   | bool | 	bool = True
+|Binary Types   | bytes, bytearray, memoryview  | 	bytes = b"Hello" , bytearray = bytearray(5) , memoryview = memoryview(bytes(5))
 
 ## Opdracht
 ### Gebruikte bronnen

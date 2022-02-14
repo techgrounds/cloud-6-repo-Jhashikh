@@ -82,14 +82,14 @@ Py- 01.4 :- Write the following Python code. The output in the terminal should b
 https://pythontutor.com/
 https://www.w3schools.com/python/default.asp
 https://www.python.org/doc/
+
 https://fcpython.com/python-basics-fcpython
 https://www.youtube.com/watch?v=adNgan70iyU
 https://www.youtube.com/watch?v=bXtVVmZuqB4
 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
 https://overapi.com/python
 
-
--- https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition
+https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition
 https://chocolatey.org/
 
 https://www.youtube.com/watch?v=o3s4VqlMsT8
@@ -97,7 +97,7 @@ https://www.youtube.com/watch?v=o3s4VqlMsT8
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Geen probleem ervaren
 
 ### Resultaat
 * Py-01.1 :- Install the latest version of Python from https://www.python.org/

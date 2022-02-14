@@ -47,3 +47,4 @@ Example output:
 ### Resultaat
 Py 02.1:
 
+![Py02.1](/main/00_includes/Python/PY%2002.1.png)

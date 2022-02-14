@@ -68,13 +68,13 @@ Python has a set of keywords that are reserved words that cannot be used as vari
 
 ## Opdracht
 
-Install the latest version of Python from https://www.python.org/
+Py-01.1 :- Install the latest version of Python from https://www.python.org/
 
-Install VS Code from https://code.visualstudio.com/download
+Py-01.2 :- Install VS Code from https://code.visualstudio.com/download
 
-Install the Python plug-in in VS Code.
+Py-01.3 :- Install the Python plug-in in VS Code.
 
-Write the following Python code. The output in the terminal should be the text “Hello world!”
+Py- 01.4 :- Write the following Python code. The output in the terminal should be the text “Hello world!”
 ![Helloworld](/00_includes/Python/Helloworld.png)
 
 
@@ -100,4 +100,11 @@ https://www.youtube.com/watch?v=o3s4VqlMsT8
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+* Py-01.1 :- Install the latest version of Python from https://www.python.org/
+
+* Py-01.2 :- Install VS Code from https://code.visualstudio.com/download
+
+* Py-01.3 :- Install the Python plug-in in VS Code.
+
+* Py- 01.4 :- Write the following Python code. The output in the terminal should be the text “Hello world!”
+![Helloworld](/00_includes/Python/Helloworld.png)

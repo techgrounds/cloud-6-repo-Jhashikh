@@ -62,3 +62,9 @@ Example output:
 Py 02.1:
 
 ![Py02.1](/00_includes/Python/PY%2002.1.png)
+
+Py 02.2
+![Py02.2](/00_includes/Python/Py02.2.png)
+
+Py 02.3
+![Py02.3](/00_includes/Python/Py02.3.png)

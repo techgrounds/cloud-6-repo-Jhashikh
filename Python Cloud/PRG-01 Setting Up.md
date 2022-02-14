@@ -1,16 +1,71 @@
 # Setting up
 ## Introduction:
-For a lot of IT jobs, some basic programming knowledge is required. You do not have to be able to write a script from scratch, or understand complex algorithms. You will have to be able to understand and modify code snippets to fit your needs.
-For this, it is important to learn the basic principles of programming. Python is often considered the easiest programming language to learn, because the syntax is very simple.
+ Python is often considered the easiest programming language to learn, because the syntax is very
+ simple.It has some similarities to the English language with influence from mathematics.It was created by Guido van Rossum, and released in 1991.
+
+It is used for:
+
+* Web-development ( Server-side),
+* Software-development
+* Mathematics
+* System Scripting
+
+### Why Python?
+Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+Python has a simple syntax similar to the English language.
+Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+Python can be treated in a procedural way, an object-oriented way or a functional way.
+
+
 When installing Python, make sure to add Python to your PATH variable (even if you’re on Windows).
 
 In order to start writing code, you’ll need an IDE. The most popular IDE is Visual Studio Code (VS Code), because it is free, lightweight, easy to use, and there are a lot of plug-ins available for high customizability.
-
-Everyone will use the same version of Python, and the same IDE. This way, it will be easier to work together.
+.
 
 
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+Python has a set of keywords that are reserved words that cannot be used as variable names, function names, or any other identifiers:
+| Keyword   | Description |
+|-----------|-------------|
+| and       | A logical operator 
+| as        | To create an alias
+| assert    | For debugging
+| break     | To break out of a loop
+| class     | To define a class
+| continue  | To continue to the next iteration of a loop
+| def       | To define a function
+| del       | To delete an object
+| elif      | 	Used in conditional statements, same as else if
+| else      | Used in conditional statements
+| except    | Used with exceptions, what to do when an exception occurs
+| False     | Boolean value, result of comparison operations
+| finally   | Used with exceptions, a block of code that will be executed no matter if there is an exception or not
+| for       | To create a for loop
+| from      | To import specific parts of a module
+| global    | To declare a global variable
+| if        | To make a conditional statement
+| import    | To import a module
+| in        | To check if a value is present in a list, tuple, etc.
+| is        | To test if two variables are equal
+| lambda    | To create an anonymous function
+| None      | 	Represents a null value
+| nonlocal  | To declare a non-local variable
+| not       | A logical operator
+| or        | A logical operator
+| pass      | A null statement, a statement that will do nothing
+| raise     | To raise an exception
+| return    | To exit a function and return a value
+| True      | Boolean value, result of comparison operations
+| try       | To make a try...except statement
+| while     | 	To create a while loop
+| with      | Used to simplify exception handling
+| yield     | To end a function, returns a generator
+|-----------|------------------------------|
+
+	
+	
+
 
 ## Opdracht
 ### Gebruikte bronnen

@@ -26,6 +26,7 @@ Comments are lines that do not get processed as code. This can be used for multi
 ## Key-terms
 Python has the following data types built-in by default, in these categories:
 | Name         |Type   | Example   |
+|--------------|-------|----------|
 
 | Text Type    | str   | x = "Hello World"
 |Numeric Types | int, float, complex |

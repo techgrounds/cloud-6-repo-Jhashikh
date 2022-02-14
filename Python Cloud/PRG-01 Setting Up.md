@@ -67,6 +67,17 @@ Python has a set of keywords that are reserved words that cannot be used as vari
 
 
 ## Opdracht
+
+Install the latest version of Python from https://www.python.org/
+
+Install VS Code from https://code.visualstudio.com/download
+
+Install the Python plug-in in VS Code.
+
+Write the following Python code. The output in the terminal should be the text “Hello world!”
+![Helloworld](/00_)
+
+
 ### Gebruikte bronnen
 https://pythontutor.com/
 https://www.w3schools.com/python/default.asp

@@ -75,7 +75,7 @@ Install VS Code from https://code.visualstudio.com/download
 Install the Python plug-in in VS Code.
 
 Write the following Python code. The output in the terminal should be the text “Hello world!”
-![Helloworld](/00_)
+![Helloworld](/00_includes/Python/Helloworld.png)
 
 
 ### Gebruikte bronnen

@@ -117,6 +117,5 @@ Geen probleem ervaren
 
 ![HelloWorldPrint](/00_includes/Python/Hello%20World%20Python.png)
 
-![Scripting](/00_includes/Python/Scripting%20in%20Python.png)
 
 

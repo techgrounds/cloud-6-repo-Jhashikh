@@ -72,4 +72,4 @@ Find out what data type the output of input() is. See if it is different for dif
 
 
 ### Py 03.2
-!{Py03.2}(/00_includes/Python/Py03.2.png)
+![Py03.2](/00_includes/Python/Py03.2.png)

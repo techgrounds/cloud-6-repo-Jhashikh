@@ -20,6 +20,8 @@ https://www.freecodecamp.org/news/object-oriented-programming-in-python/
 
 https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-aws-auto-scaling.html
 
+https://awscloudfeed.com/whats-new/management-tools/detecting-and-remediating-process-issues-on-ec2-instances-using-amazon-cloudwatch-and-aws-systems-manager
+
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 

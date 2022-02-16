@@ -56,4 +56,19 @@ https://www.codecademy.com/catalog/language/python
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+
+**PY 04.1**
+
+![Py 04.1](/00_includes/Python/PY%2004.1.png)
+
+**PY 04.2A**
+
+![PY 04.2A](/00_includes/Python/PY%2004.2-A.png)
+
+**PY 04.2B**
+
+![PY 04.2](/00_includes/Python/PY%2004.2-B.png)
+
+**PY 04.3**
+
+![PY 04.3](/00_includes/Python/PY%2004.3.png)

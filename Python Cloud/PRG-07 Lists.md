@@ -41,4 +41,4 @@ The first result above is created by adding 9 and 80. The second result is creat
 
 ### Resultaat
  **PY 07.1**
-  
+ ![py07.1](/00_includes/Python/PY07.1.png) 

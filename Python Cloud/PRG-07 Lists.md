@@ -16,7 +16,9 @@ Lists are one of 4 built-in data types in Python used to store collections of da
 **PY 07.1**
 
 -- Create a new script.
+
 -- Create a variable that contains a list of five names
+
 -- Loop over the list using a for loop. Print every individual name in the list on a new line.
 
 **PY 07.2**
@@ -38,4 +40,5 @@ The first result above is created by adding 9 and 80. The second result is creat
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+ **PY 07.1**
+  

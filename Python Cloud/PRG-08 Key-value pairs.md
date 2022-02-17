@@ -15,4 +15,10 @@ https://www.codegrepper.com/code-examples/python/how+to+access+key+value+pair+in
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+**PY08.1**
+
+![PY08.1](/00_includes/Python/PY%2008.1.png)
+
+**PY08.2**
+
+![PY08.2](/00_includes/Python/PY08.2.png)

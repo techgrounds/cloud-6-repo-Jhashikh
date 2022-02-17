@@ -34,7 +34,7 @@ Example output:
 The first result above is created by adding 9 and 80. The second result is created by adding 80 and 16, etc. The last result is created by adding 35 and 9.
 
 ### Gebruikte bronnen
-[Plaats hier de bronnen die je hebt gebruikt.]
+https://www.geeksforgeeks.org/python-program-for-sum-of-consecutive-numbers-with-overlapping-in-lists/
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]

@@ -42,3 +42,7 @@ https://www.geeksforgeeks.org/python-program-for-sum-of-consecutive-numbers-with
 ### Resultaat
  **PY 07.1**
  ![py07.1](/00_includes/Python/PY07.1.png) 
+
+ **PY 07.2**
+ 
+ ![PY07.2](/00_includes/Python/PY%2007-2.png)

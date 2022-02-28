@@ -22,6 +22,27 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-aws-auto-sc
 
 https://awscloudfeed.com/whats-new/management-tools/detecting-and-remediating-process-issues-on-ec2-instances-using-amazon-cloudwatch-and-aws-systems-manager
 
+https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
+
+https://giters.com/
+https://github.com/aws-samples/aws-cdk-examples/tree/master/python
+https://docs.aws.amazon.com/cdk/api/v2/python/
+https://docs.aws.amazon.com/cdk/v2/guide/hello_world.html
+
+https://www.capitalone.com/tech/cloud/python-boto3-automate-aws-health-checks/
+
+https://github.com/ksmin23/my-aws-cdk-examples
+
+https://medium.com/cyberark-engineering/advanced-custom-resources-with-aws-cdk-1e024d4fb2fa
+
+https://git-scm.com/book/en/v2/Git-Basics-Tagging
+
+https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_ec2/S3DownloadOptions.html
+
+https://cdkworkshop.com/
+
+
+
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 

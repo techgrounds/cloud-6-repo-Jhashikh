@@ -40,8 +40,49 @@ https://git-scm.com/book/en/v2/Git-Basics-Tagging
 https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_ec2/S3DownloadOptions.html
 
 https://cdkworkshop.com/
+https://www.youtube.com/watch?v=cKQtPZwf97s
+https://www.youtube.com/watch?v=-BLP6U0WvZk
 
 
+https://github.com/aws-samples/aws-cdk-examples/tree/master/python
+https://github.com/aws-samples/aws-cdk-examples/tree/master/python/ec2/instance/
+https://live.paloaltonetworks.com/t5/cloud-integration/ct-p/Cloud_Templates
+
+https://levelup.gitconnected.com/creating-a-custom-vpc-with-aws-cdk-52f8788cb2d5
+
+https://bobbyhadz.com/blog/aws-cdk-vpc-example
+
+https://catalog.us-east-1.prod.workshops.aws/workshops/5962a836-b214-4fbf-9462-fedba7edcc9b/en-US/the-workshop/2-create-vpc (example is Typescript)
+
+https://ramasankarmolleti.com/2021/02/22/aws-cdk-python-how-to-configure-vpc-subnets-internet-gateway-natgateway/
+
+https://githubhelp.com/
+
+https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-ec2.CfnVPCPeeringConnection.html
+https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.CfnVPCPeeringConnection.html
+
+https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-basics.html
+
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#vpcpeeringconnection
+
+https://gitter.im/awslabs/aws-cdk?at=5e4587c5b612cc7bb165bf29
+
+https://dev.to/aws-builders/ping-me-part-1-vpc-peering-using-cdk-2kpd
+
+https://www.pulumi.com/registry/packages/aws/api-docs/ec2/vpcpeeringconnection/
+
+https://bobbyhadz.com/blog/aws-cdk-ec2-instance-example
+
+https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_ec2/CfnVPCPeeringConnection.html
+
+ec2.CfnRoute
+https://quicktype.io/
+
+https://tomomano.github.io/learn-aws-by-coding/en/#sec_first_ec2
+
+https://constructs.dev/packages/@aws-cdk/aws-ec2/v/1.124.0?lang=python
+
+https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.Instance.html
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]

@@ -1,0 +1,803 @@
+{
+  "Resources": {
+    "APPPRODVPC2B2E1E05": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.10.10.0/24",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/APP-PROD-VPC"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Resource"
+      }
+    },
+    "APPPRODVPCPublicSubnetSubnet1Subnet98E1F930": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.10.10.0/26",
+        "VpcId": {
+          "Ref": "APPPRODVPC2B2E1E05"
+        },
+        "AvailabilityZone": "eu-central-1a",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public-Subnet"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet1/Subnet"
+      }
+    },
+    "APPPRODVPCPublicSubnetSubnet1RouteTableE8F07273": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "APPPRODVPC2B2E1E05"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet1/RouteTable"
+      }
+    },
+    "APPPRODVPCPublicSubnetSubnet1RouteTableAssociationE29FED4A": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "APPPRODVPCPublicSubnetSubnet1RouteTableE8F07273"
+        },
+        "SubnetId": {
+          "Ref": "APPPRODVPCPublicSubnetSubnet1Subnet98E1F930"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet1/RouteTableAssociation"
+      }
+    },
+    "APPPRODVPCPublicSubnetSubnet1DefaultRoute62AC3D84": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "APPPRODVPCPublicSubnetSubnet1RouteTableE8F07273"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "APPPRODVPCIGWF7AEA7FD"
+        }
+      },
+      "DependsOn": [
+        "APPPRODVPCVPCGW2097373E"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet1/DefaultRoute"
+      }
+    },
+    "APPPRODVPCPublicSubnetSubnet2SubnetD1B41638": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.10.10.64/26",
+        "VpcId": {
+          "Ref": "APPPRODVPC2B2E1E05"
+        },
+        "AvailabilityZone": "eu-central-1b",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public-Subnet"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet2/Subnet"
+      }
+    },
+    "APPPRODVPCPublicSubnetSubnet2RouteTableAE9F763E": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "APPPRODVPC2B2E1E05"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet2/RouteTable"
+      }
+    },
+    "APPPRODVPCPublicSubnetSubnet2RouteTableAssociationA1AA6315": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "APPPRODVPCPublicSubnetSubnet2RouteTableAE9F763E"
+        },
+        "SubnetId": {
+          "Ref": "APPPRODVPCPublicSubnetSubnet2SubnetD1B41638"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet2/RouteTableAssociation"
+      }
+    },
+    "APPPRODVPCPublicSubnetSubnet2DefaultRouteC4420592": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "APPPRODVPCPublicSubnetSubnet2RouteTableAE9F763E"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "APPPRODVPCIGWF7AEA7FD"
+        }
+      },
+      "DependsOn": [
+        "APPPRODVPCVPCGW2097373E"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/Public-SubnetSubnet2/DefaultRoute"
+      }
+    },
+    "APPPRODVPCIGWF7AEA7FD": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/APP-PROD-VPC"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/IGW"
+      }
+    },
+    "APPPRODVPCVPCGW2097373E": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "APPPRODVPC2B2E1E05"
+        },
+        "InternetGatewayId": {
+          "Ref": "APPPRODVPCIGWF7AEA7FD"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/APP-PROD-VPC/VPCGW"
+      }
+    },
+    "ManagementPRODVPC317109D3": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.20.20.0/24",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Management-PROD-VPC"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Resource"
+      }
+    },
+    "ManagementPRODVPCPublicSubnetSubnet1Subnet26EF99CF": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.20.20.0/26",
+        "VpcId": {
+          "Ref": "ManagementPRODVPC317109D3"
+        },
+        "AvailabilityZone": "eu-central-1a",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public-Subnet"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1/Subnet"
+      }
+    },
+    "ManagementPRODVPCPublicSubnetSubnet1RouteTable7DB1810C": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "ManagementPRODVPC317109D3"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1/RouteTable"
+      }
+    },
+    "ManagementPRODVPCPublicSubnetSubnet1RouteTableAssociation9A570A01": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "ManagementPRODVPCPublicSubnetSubnet1RouteTable7DB1810C"
+        },
+        "SubnetId": {
+          "Ref": "ManagementPRODVPCPublicSubnetSubnet1Subnet26EF99CF"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1/RouteTableAssociation"
+      }
+    },
+    "ManagementPRODVPCPublicSubnetSubnet1DefaultRouteCCA90086": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "ManagementPRODVPCPublicSubnetSubnet1RouteTable7DB1810C"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "ManagementPRODVPCIGW3A8DAA0F"
+        }
+      },
+      "DependsOn": [
+        "ManagementPRODVPCVPCGWB263C60C"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1/DefaultRoute"
+      }
+    },
+    "ManagementPRODVPCPublicSubnetSubnet2Subnet14AF81BC": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.20.20.64/26",
+        "VpcId": {
+          "Ref": "ManagementPRODVPC317109D3"
+        },
+        "AvailabilityZone": "eu-central-1b",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Public-Subnet"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2/Subnet"
+      }
+    },
+    "ManagementPRODVPCPublicSubnetSubnet2RouteTable0B5CA71A": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "ManagementPRODVPC317109D3"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2/RouteTable"
+      }
+    },
+    "ManagementPRODVPCPublicSubnetSubnet2RouteTableAssociation05E21A2B": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "ManagementPRODVPCPublicSubnetSubnet2RouteTable0B5CA71A"
+        },
+        "SubnetId": {
+          "Ref": "ManagementPRODVPCPublicSubnetSubnet2Subnet14AF81BC"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2/RouteTableAssociation"
+      }
+    },
+    "ManagementPRODVPCPublicSubnetSubnet2DefaultRouteC93DA055": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "ManagementPRODVPCPublicSubnetSubnet2RouteTable0B5CA71A"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "ManagementPRODVPCIGW3A8DAA0F"
+        }
+      },
+      "DependsOn": [
+        "ManagementPRODVPCVPCGWB263C60C"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2/DefaultRoute"
+      }
+    },
+    "ManagementPRODVPCIGW3A8DAA0F": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Management-PROD-VPC"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/IGW"
+      }
+    },
+    "ManagementPRODVPCVPCGWB263C60C": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "ManagementPRODVPC317109D3"
+        },
+        "InternetGatewayId": {
+          "Ref": "ManagementPRODVPCIGW3A8DAA0F"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management-PROD-VPC/VPCGW"
+      }
+    },
+    "MyCfnVPCPeeringConnection": {
+      "Type": "AWS::EC2::VPCPeeringConnection",
+      "Properties": {
+        "PeerVpcId": {
+          "Ref": "APPPRODVPC2B2E1E05"
+        },
+        "VpcId": {
+          "Ref": "ManagementPRODVPC317109D3"
+        },
+        "PeerRegion": "eu-central-1"
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/MyCfnVPCPeeringConnection"
+      }
+    },
+    "SecurityGroupDD263621": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": " Techgrounds Project webserver security group",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "ssh",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "HTTP",
+            "FromPort": 80,
+            "IpProtocol": "tcp",
+            "ToPort": 80
+          },
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "HTTPS",
+            "FromPort": 443,
+            "IpProtocol": "tcp",
+            "ToPort": 443
+          },
+          {
+            "Description": "allow ssh access from the Management Security Group",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "SourceSecurityGroupId": {
+              "Fn::GetAtt": [
+                "SecurityGroup1F554B36F",
+                "GroupId"
+              ]
+            },
+            "ToPort": 22
+          }
+        ],
+        "VpcId": {
+          "Ref": "APPPRODVPC2B2E1E05"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/SecurityGroup/Resource"
+      }
+    },
+    "SecurityGroup1F554B36F": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "ManagementserverSecurityGroup",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "83.85.84.131/32",
+            "Description": "ssh",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "83.85.84.131/32",
+            "Description": "rdp",
+            "FromPort": 3389,
+            "IpProtocol": "tcp",
+            "ToPort": 3389
+          }
+        ],
+        "VpcId": {
+          "Ref": "ManagementPRODVPC317109D3"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/SecurityGroup1/Resource"
+      }
+    },
+    "InstanceSSMCBFA3CF0": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonSSMManagedInstanceCore"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/InstanceSSM/Resource"
+      }
+    },
+    "WebserverInstanceRole942CAF13": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Webserver"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Webserver/InstanceRole/Resource"
+      }
+    },
+    "WebserverInstanceProfile5CEA6CFC": {
+      "Type": "AWS::IAM::InstanceProfile",
+      "Properties": {
+        "Roles": [
+          {
+            "Ref": "WebserverInstanceRole942CAF13"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Webserver/InstanceProfile"
+      }
+    },
+    "Webserver2D6E5D9A": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "AvailabilityZone": "eu-central-1a",
+        "IamInstanceProfile": {
+          "Ref": "WebserverInstanceProfile5CEA6CFC"
+        },
+        "ImageId": {
+          "Ref": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
+        },
+        "InstanceType": "t2.micro",
+        "SecurityGroupIds": [
+          {
+            "Fn::GetAtt": [
+              "SecurityGroupDD263621",
+              "GroupId"
+            ]
+          }
+        ],
+        "SubnetId": {
+          "Ref": "APPPRODVPCPublicSubnetSubnet1Subnet98E1F930"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Webserver"
+          }
+        ],
+        "UserData": {
+          "Fn::Base64": "#!/bin/bash"
+        }
+      },
+      "DependsOn": [
+        "WebserverInstanceRole942CAF13"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Webserver/Resource"
+      }
+    },
+    "ManagementServerInstanceRoleE1EF1325": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Management Server"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management Server/InstanceRole/Resource"
+      }
+    },
+    "ManagementServerInstanceRoleDefaultPolicyF870AB9D": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::cdk-hnb659fds-assets-505659885147-eu-central-1"
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::cdk-hnb659fds-assets-505659885147-eu-central-1/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "ManagementServerInstanceRoleDefaultPolicyF870AB9D",
+        "Roles": [
+          {
+            "Ref": "ManagementServerInstanceRoleE1EF1325"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management Server/InstanceRole/DefaultPolicy/Resource"
+      }
+    },
+    "ManagementServerInstanceProfile576B0FA7": {
+      "Type": "AWS::IAM::InstanceProfile",
+      "Properties": {
+        "Roles": [
+          {
+            "Ref": "ManagementServerInstanceRoleE1EF1325"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management Server/InstanceProfile"
+      }
+    },
+    "ManagementServer3E4EF7C1": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "AvailabilityZone": "eu-central-1a",
+        "IamInstanceProfile": {
+          "Ref": "ManagementServerInstanceProfile576B0FA7"
+        },
+        "ImageId": {
+          "Ref": "SsmParameterValueawsserviceamiwindowslatestWindowsServer2019EnglishFullBaseC96584B6F00A464EAD1953AFF4B05118Parameter"
+        },
+        "InstanceType": "t2.micro",
+        "SecurityGroupIds": [
+          {
+            "Fn::GetAtt": [
+              "SecurityGroup1F554B36F",
+              "GroupId"
+            ]
+          }
+        ],
+        "SubnetId": {
+          "Ref": "ManagementPRODVPCPublicSubnetSubnet1Subnet26EF99CF"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "TechgroundsprojectStack/Management Server"
+          }
+        ],
+        "UserData": {
+          "Fn::Base64": "<powershell>mkdir (Split-Path -Path 'C:/temp/61af3770a87e5b49ff7ad59410340d9cba0ecce85ccc3620b2ad406ef38327aa.sh' ) -ea 0\nRead-S3Object -BucketName 'cdk-hnb659fds-assets-505659885147-eu-central-1' -key '61af3770a87e5b49ff7ad59410340d9cba0ecce85ccc3620b2ad406ef38327aa.sh' -file 'C:/temp/61af3770a87e5b49ff7ad59410340d9cba0ecce85ccc3620b2ad406ef38327aa.sh' -ErrorAction Stop\n&'C:/temp/61af3770a87e5b49ff7ad59410340d9cba0ecce85ccc3620b2ad406ef38327aa.sh'\nif (!$?) { Write-Error 'Failed to execute the file \"C:/temp/61af3770a87e5b49ff7ad59410340d9cba0ecce85ccc3620b2ad406ef38327aa.sh\"' -ErrorAction Stop }</powershell>"
+        }
+      },
+      "DependsOn": [
+        "ManagementServerInstanceRoleDefaultPolicyF870AB9D",
+        "ManagementServerInstanceRoleE1EF1325"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/Management Server/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/1VQy47CMAz8Fu5pgKL9gNID4ha1K67IzRrItnVQ4ghVVf+d9MFWe5rxZOQZJ5X7L7nbwMsn+qdOGlPJvmTQtYjStUedyv7y1CK/0UXlQoWqMboMFSGP2soKGxi/oWpw1Vct895qA2ws/ZlHciZGF50nYHxBt8QsU8axyKNF4kVXiM7QPbdEqKddJergDHcnZ8NzCv4nnMkzkF6iZj4IA63sCzs3/eDnWTl7M1FSNh46FZrZIPzhCt4je5mNEGd5DLpGPoKPWwv0Nrg5S4GDFuNpYrLGD73H3lPc4hqE6vhhaXuQ+51MN7/emMQFYtOiLGZ8AytT0EWcAQAA"
+      },
+      "Metadata": {
+        "aws:cdk:path": "TechgroundsprojectStack/CDKMetadata/Default"
+      }
+    }
+  },
+  "Parameters": {
+    "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter": {
+      "Type": "AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>",
+      "Default": "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
+    },
+    "SsmParameterValueawsserviceamiwindowslatestWindowsServer2019EnglishFullBaseC96584B6F00A464EAD1953AFF4B05118Parameter": {
+      "Type": "AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>",
+      "Default": "/aws/service/ami-windows-latest/Windows_Server-2019-English-Full-Base"
+    },
+    "BootstrapVersion": {
+      "Type": "AWS::SSM::Parameter::Value<String>",
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+    }
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  {
+                    "Ref": "BootstrapVersion"
+                  }
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "version": "16.0.0",
+  "files": {
+    "61af3770a87e5b49ff7ad59410340d9cba0ecce85ccc3620b2ad406ef38327aa": {
+      "source": {
+        "path": "asset.61af3770a87e5b49ff7ad59410340d9cba0ecce85ccc3620b2ad406ef38327aa.sh",
+        "packaging": "file"
+      },
+      "destinations": {
+        "505659885147-eu-central-1": {
+          "bucketName": "cdk-hnb659fds-assets-505659885147-eu-central-1",
+          "objectKey": "61af3770a87e5b49ff7ad59410340d9cba0ecce85ccc3620b2ad406ef38327aa.sh",
+          "region": "eu-central-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::505659885147:role/cdk-hnb659fds-file-publishing-role-505659885147-eu-central-1"
+        }
+      }
+    },
+    "081374e8b544ac5add51edc1168060547cc276b041fc8222b8b718998bd5613e": {
+      "source": {
+        "path": "TechgroundsprojectStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "505659885147-eu-central-1": {
+          "bucketName": "cdk-hnb659fds-assets-505659885147-eu-central-1",
+          "objectKey": "081374e8b544ac5add51edc1168060547cc276b041fc8222b8b718998bd5613e.json",
+          "region": "eu-central-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::505659885147:role/cdk-hnb659fds-file-publishing-role-505659885147-eu-central-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

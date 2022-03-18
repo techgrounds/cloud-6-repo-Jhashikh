@@ -80,10 +80,21 @@ https://quicktype.io/
 
 https://tomomano.github.io/learn-aws-by-coding/en/#sec_first_ec2
 
-https://constructs.dev/packages/@aws-cdk/aws-ec2/v/1.124.0?lang=python
+https://constructs.dev/search?q=&cdk=aws-cdk&cdkver=2&keywords=security&langs=python&offset=0
+
+https://constructs.dev/packages/@aws-cdk/aws-ec2/v/1.124.0/api/SecurityGroup?lang=python
 
 https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.Instance.html
 
+https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2-example-security-group.html
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quickref-ec2.html
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html
+
+https://docs.aws.amazon.com/cdk/api/v1/python/aws_cdk.aws_ec2/SecurityGroup.html
+
+https://stackoverflow.com/questions/57922113/add-ingress-rule-to-security-groups-using-aws-cdk
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 

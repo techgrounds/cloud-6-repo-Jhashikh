@@ -95,6 +95,26 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-referen
 https://docs.aws.amazon.com/cdk/api/v1/python/aws_cdk.aws_ec2/SecurityGroup.html
 
 https://stackoverflow.com/questions/57922113/add-ingress-rule-to-security-groups-using-aws-cdk
+
+https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_kms/README.html
+
+https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_backup/README.html
+
+https://crontab.guru/
+
+https://github.com/aws-samples/aws-cdk-examples/tree/master/python
+
+https://copilot.github.com/
+
+https://aws.amazon.com/premiumsupport/knowledge-center/elb-redirect-http-to-https-using-alb/
+
+https://pypi.org/project/aws-cdk.aws-ecs-patterns/
+
+https://aws.amazon.com/developer/language/python/?nc1=f_dr
+
+https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html
+
+ https://docs.aws.amazon.com/awssupport/latest/user/troubleshooting.html
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 

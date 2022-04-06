@@ -115,6 +115,10 @@ https://aws.amazon.com/developer/language/python/?nc1=f_dr
 https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html
 
  https://docs.aws.amazon.com/awssupport/latest/user/troubleshooting.html
+
+ https://bobbyhadz.com/blog/aws-cdk-application-load-balancer
+
+ https://github.com/aws/aws-cdk/issues
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 

@@ -1,0 +1,546 @@
+{
+  "version": "16.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "TechgroundsprojectStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "TechgroundsprojectStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "TechgroundsprojectStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://505659885147/eu-central-1",
+      "properties": {
+        "templateFile": "TechgroundsprojectStack.template.json",
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::505659885147:role/cdk-hnb659fds-deploy-role-505659885147-eu-central-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::505659885147:role/cdk-hnb659fds-cfn-exec-role-505659885147-eu-central-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-505659885147-eu-central-1/75233da0798b3c2a7371a8107b8d81558bbd87de2e180a26da9057723ba5de5c.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "TechgroundsprojectStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::505659885147:role/cdk-hnb659fds-lookup-role-505659885147-eu-central-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "TechgroundsprojectStack.assets"
+      ],
+      "metadata": {
+        "/TechgroundsprojectStack/MyBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucketF68F3FF0"
+          }
+        ],
+        "/TechgroundsprojectStack/MyBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucketPolicyE7FBAC7B"
+          }
+        ],
+        "/TechgroundsprojectStack/MyBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyBucketAutoDeleteObjectsCustomResource2C28D565"
+          }
+        ],
+        "/TechgroundsprojectStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/TechgroundsprojectStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/TechgroundsprojectStack/S3deployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3deploymentAwsCliLayerC4BF482D"
+          }
+        ],
+        "/TechgroundsprojectStack/S3deployment/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3deploymentCustomResource1DCFA80C"
+          }
+        ],
+        "/TechgroundsprojectStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ],
+        "/TechgroundsprojectStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+          }
+        ],
+        "/TechgroundsprojectStack/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPC2B2E1E05"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet1SubnetFAC31306"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet1RouteTable7FB612E2"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet1RouteTableAssociation697BEE21"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet1DefaultRoute98FB1E55"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet1/NatInstance/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet1NatInstanceInstanceProfile662AE09D"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet1/NatInstance/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet1NatInstance3CDFA2D7"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet2Subnet403040B7"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet2RouteTable58C3083A"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet2RouteTableAssociationDDBBEA77"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPublicSubnet2DefaultRoute253922F1"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPrivateSubnet1Subnet9BF691E9"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPrivateSubnet1RouteTable2B6C5FE0"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPrivateSubnet1RouteTableAssociationE466A979"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPrivateSubnet1DefaultRoute7EB537FC"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPrivateSubnet2Subnet07C11C43"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPrivateSubnet2RouteTable81C634AA"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPrivateSubnet2RouteTableAssociation69C43941"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCPrivateSubnet2DefaultRouteAD737376"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCIGWF7AEA7FD"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCVPCGW2097373E"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/NatSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCNatSecurityGroupEF11B24E"
+          }
+        ],
+        "/TechgroundsprojectStack/APP-PROD-VPC/NatRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APPPRODVPCNatRole0F441EA2"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPC317109D3"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCPublicSubnetSubnet1Subnet26EF99CF"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCPublicSubnetSubnet1RouteTable7DB1810C"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCPublicSubnetSubnet1RouteTableAssociation9A570A01"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCPublicSubnetSubnet1DefaultRouteCCA90086"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCPublicSubnetSubnet2Subnet14AF81BC"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCPublicSubnetSubnet2RouteTable0B5CA71A"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCPublicSubnetSubnet2RouteTableAssociation05E21A2B"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/Public-SubnetSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCPublicSubnetSubnet2DefaultRouteC93DA055"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCIGW3A8DAA0F"
+          }
+        ],
+        "/TechgroundsprojectStack/Management-PROD-VPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementPRODVPCVPCGWB263C60C"
+          }
+        ],
+        "/TechgroundsprojectStack/MyCfnVPCPeeringConnection": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyCfnVPCPeeringConnection"
+          }
+        ],
+        "/TechgroundsprojectStack/alb/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "alb8A8B13C2"
+          }
+        ],
+        "/TechgroundsprojectStack/alb/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "albSecurityGroup49866104"
+          }
+        ],
+        "/TechgroundsprojectStack/alb/Listener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "albListener3EA0B2EF"
+          }
+        ],
+        "/TechgroundsprojectStack/alb/Listener/asgGroup": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "When creating an empty TargetGroup, you should specify a 'targetType' (this warning may become an error in the future).",
+            "trace": [
+              "Annotations.addMessage (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:1213)",
+              "Annotations.addWarning (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\annotations.js:1:600)",
+              "ApplicationTargetGroup.validateTargetGroup (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\aws-elasticloadbalancingv2\\lib\\shared\\base-target-group.js:1:4354)",
+              "ApplicationTargetGroup.validateTargetGroup (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\aws-elasticloadbalancingv2\\lib\\alb\\application-target-group.js:1:6678)",
+              "Object.validate (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\aws-elasticloadbalancingv2\\lib\\shared\\base-target-group.js:1:3355)",
+              "Node.validate (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\constructs\\lib\\construct.js:305:30)",
+              "C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:1:3012",
+              "visit (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:3:64)",
+              "visit (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:3:141)",
+              "visit (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:3:141)",
+              "visit (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:3:141)",
+              "visit (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:3:141)",
+              "validateTree (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:1:2947)",
+              "Object.synthesize (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\private\\synthesis.js:1:598)",
+              "App.synth (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\jsii-kernel-a2tRlZ\\node_modules\\aws-cdk-lib\\core\\lib\\stage.js:1:1853)",
+              "C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\tmpyr2t04yi\\lib\\program.js:8228:134",
+              "Kernel._wrapSandboxCode (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\tmpyr2t04yi\\lib\\program.js:8840:24)",
+              "C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\tmpyr2t04yi\\lib\\program.js:8228:107",
+              "Kernel._ensureSync (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\tmpyr2t04yi\\lib\\program.js:8821:28)",
+              "Kernel.invoke (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\tmpyr2t04yi\\lib\\program.js:8228:34)",
+              "KernelHost.processRequest (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\tmpyr2t04yi\\lib\\program.js:9761:36)",
+              "KernelHost.run (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\tmpyr2t04yi\\lib\\program.js:9724:22)",
+              "Immediate._onImmediate (C:\\Users\\TECHGR~1\\AppData\\Local\\Temp\\tmpyr2t04yi\\lib\\program.js:9725:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/TechgroundsprojectStack/alb/Listener/asgGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "albListenerasgGroup0486D22D"
+          }
+        ],
+        "/TechgroundsprojectStack/InstanceSSM/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InstanceSSMCBFA3CF0"
+          }
+        ],
+        "/TechgroundsprojectStack/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SecurityGroupDD263621"
+          }
+        ],
+        "/TechgroundsprojectStack/SecurityGroup1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SecurityGroup1F554B36F"
+          }
+        ],
+        "/TechgroundsprojectStack/Webserver/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserverInstanceSecurityGroupB57716DA"
+          }
+        ],
+        "/TechgroundsprojectStack/Webserver/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserverInstanceRole942CAF13"
+          }
+        ],
+        "/TechgroundsprojectStack/Webserver/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WebserverInstanceProfile5CEA6CFC"
+          }
+        ],
+        "/TechgroundsprojectStack/Webserver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Webserver2D6E5D9A"
+          }
+        ],
+        "/TechgroundsprojectStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn2-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/TechgroundsprojectStack/Management Server/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementServerInstanceRoleE1EF1325"
+          }
+        ],
+        "/TechgroundsprojectStack/Management Server/InstanceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementServerInstanceRoleDefaultPolicyF870AB9D"
+          }
+        ],
+        "/TechgroundsprojectStack/Management Server/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementServerInstanceProfile576B0FA7"
+          }
+        ],
+        "/TechgroundsprojectStack/Management Server/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ManagementServer3E4EF7C1"
+          }
+        ],
+        "/TechgroundsprojectStack/SsmParameterValue:--aws--service--ami-windows-latest--Windows_Server-2019-English-Full-Base:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiwindowslatestWindowsServer2019EnglishFullBaseC96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/TechgroundsprojectStack/asg/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "asgInstanceSecurityGroup5CEB2975"
+          }
+        ],
+        "/TechgroundsprojectStack/asg/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "asgInstanceRole8AC4201C"
+          }
+        ],
+        "/TechgroundsprojectStack/asg/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "asgInstanceProfile4E44E320"
+          }
+        ],
+        "/TechgroundsprojectStack/asg/LaunchConfig": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "asgLaunchConfig37FDE42B"
+          }
+        ],
+        "/TechgroundsprojectStack/asg/ASG": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "asgASG4D014670"
+          }
+        ],
+        "/TechgroundsprojectStack/Plan/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlanDAF4E53A"
+          }
+        ],
+        "/TechgroundsprojectStack/Plan/Selection/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlanSelectionRole6D10F4B7"
+          }
+        ],
+        "/TechgroundsprojectStack/Plan/Selection/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlanSelectionF88CBC04"
+          }
+        ],
+        "/TechgroundsprojectStack/Plan/Vault/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlanVault0284B0C2"
+          }
+        ],
+        "/TechgroundsprojectStack/Plan1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Plan1303101BB"
+          }
+        ],
+        "/TechgroundsprojectStack/Plan1/Selection/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Plan1SelectionRole84A6B50A"
+          }
+        ],
+        "/TechgroundsprojectStack/Plan1/Selection/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Plan1SelectionB1E74EB8"
+          }
+        ],
+        "/TechgroundsprojectStack/Plan1/Vault/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Plan1Vault804969FC"
+          }
+        ],
+        "/TechgroundsprojectStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/TechgroundsprojectStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/TechgroundsprojectStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "TechgroundsprojectStack"
+    }
+  }
+}

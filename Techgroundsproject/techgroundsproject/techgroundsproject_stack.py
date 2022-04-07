@@ -201,9 +201,7 @@ class TechgroundsprojectStack(Stack):
 
       # plan: backup.BackupPlan , adding resources
         plan.add_selection('Selection',
-            resources=[
-                backup.BackupResource.from_ec2_instance(Instance), 
-        
+            resources=[backup.BackupResource.from_ec2_instance(Instance), 
             ]
     )  
         # backup_vault: backup.BackupVault, adding rule of backup

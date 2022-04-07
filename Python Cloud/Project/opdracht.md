@@ -119,6 +119,18 @@ https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html
  https://bobbyhadz.com/blog/aws-cdk-application-load-balancer
 
  https://github.com/aws/aws-cdk/issues
+
+ https://docs.aws.amazon.com/cdk/api/v1/python/aws_cdk.aws_elasticloadbalancingv2/RedirectResponse.html
+
+ https://sbstjn.com/blog/aws-cdk-lambda-loadbalancer-vpc-certificate/
+
+ https://stackoverflow.com/questions/66586759/how-to-correctly-code-aws-alb-redirection-in-cdk-python
+
+ https://pillpall.github.io/aws/2020/08/27/Create-Self-Signed-Certificate-with-Cloudformation.html
+
+ https://docs.aws.amazon.com/cdk/api/v2/python/aws_cdk.aws_elasticloadbalancingv2/README.html
+
+ https://dev.to/lukvonstrom/creating-an-aws-private-certificate-root-authority-with-lambda-and-node-js-4lee
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
 

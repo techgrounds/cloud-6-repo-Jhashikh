@@ -76,11 +76,7 @@ class TechgroundsprojectStack(Stack):
         peer_region='eu-central-1',
         )
         # Autoscaling security group
-        alb_sg = ec2.SecurityGroup(self, 'AlbSecurityGroup', 
-            vpc= self.vpc1,
-            allow_all_outbound = True,
-            description = ' Techgrounds Project webserver security group'
-            )
+        alb_sg = ec2.SecurityGroup(self, 'AlbSecurityGroup', vpc= self.vpc1,)
 
         # Adding Application Load balancer in VPC1
         alb = elbv2.ApplicationLoadBalancer(self, 'alb',
@@ -95,7 +91,13 @@ class TechgroundsprojectStack(Stack):
             target_protocol=elbv2.ApplicationProtocol.HTTPS,
             target_port=443,
         )
-        
+        # Adding listener to our ALB
+
+        listener= alb.add_listener('Listener',
+        port= 80,
+        open= True,
+        )
+
         #AMI
         amzn_linux = ec2.MachineImage.latest_amazon_linux(
             generation=ec2.AmazonLinuxGeneration.AMAZON_LINUX_2,
@@ -116,8 +118,13 @@ class TechgroundsprojectStack(Stack):
         
         #Security group ingress and egress rules
 
-    
-            
+        
+        
+        alb_sg = ec2.SecurityGroup(self, 'AlbSecurityGroup',
+            vpc= self.vpc1, 
+            allow_all_outbound = True,
+            description = ' Techgrounds Project webserver security group'
+            )
 
         alb_sg.add_ingress_rule(
                 peer=ec2.Peer.any_ipv4(),
@@ -185,9 +192,9 @@ class TechgroundsprojectStack(Stack):
         )
         
         # add target to the ALB listener.Health checks are configured upon creation of a target grou
-        listener= alb.addListener('Listener',
-            port =443,
-            certificate= Certificate,)
+        listener= alb.add_listener('Listener',
+            port =80,
+            open= True,)
         listener.add_targets('asg',
         targets=[asg],
         health_check=elbv2.HealthCheck(

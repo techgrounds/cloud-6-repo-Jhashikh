@@ -185,9 +185,9 @@ class TechgroundsprojectStack(Stack):
         )
         
         # add target to the ALB listener.Health checks are configured upon creation of a target grou
-        listener= alb.addListener('Listener',
-            port =443,
-            certificate= Certificate,)
+        listener= alb.add_listener('Listener',
+            port =80,
+            open= True,)
         listener.add_targets('asg',
         targets=[asg],
         health_check=elbv2.HealthCheck(

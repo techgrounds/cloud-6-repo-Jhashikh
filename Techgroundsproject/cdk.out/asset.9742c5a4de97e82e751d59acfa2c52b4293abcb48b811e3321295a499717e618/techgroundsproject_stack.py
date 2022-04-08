@@ -95,7 +95,13 @@ class TechgroundsprojectStack(Stack):
             target_protocol=elbv2.ApplicationProtocol.HTTPS,
             target_port=443,
         )
-        
+        # Adding listener to our ALB
+
+        listener= alb.add_listener('Listener',
+        port= 80,
+        open= True,
+        )
+
         #AMI
         amzn_linux = ec2.MachineImage.latest_amazon_linux(
             generation=ec2.AmazonLinuxGeneration.AMAZON_LINUX_2,
@@ -185,9 +191,9 @@ class TechgroundsprojectStack(Stack):
         )
         
         # add target to the ALB listener.Health checks are configured upon creation of a target grou
-        listener= alb.addListener('Listener',
-            port =443,
-            certificate= Certificate,)
+        listener= alb.add_listener('Listener',
+            port =80,
+            open= True,)
         listener.add_targets('asg',
         targets=[asg],
         health_check=elbv2.HealthCheck(

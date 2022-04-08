@@ -76,11 +76,7 @@ class TechgroundsprojectStack(Stack):
         peer_region='eu-central-1',
         )
         # Autoscaling security group
-        alb_sg = ec2.SecurityGroup(self, 'AlbSecurityGroup', 
-            vpc= self.vpc1,
-            allow_all_outbound = True,
-            description = ' Techgrounds Project webserver security group'
-            )
+        alb_sg = ec2.SecurityGroup(self, 'SecurityGroup', vpc= self.vpc1,)
 
         # Adding Application Load balancer in VPC1
         alb = elbv2.ApplicationLoadBalancer(self, 'alb',
@@ -95,7 +91,13 @@ class TechgroundsprojectStack(Stack):
             target_protocol=elbv2.ApplicationProtocol.HTTPS,
             target_port=443,
         )
-        
+        # Adding listener to our ALB
+
+        listener= alb.add_listener('Listener',
+        port= 80,
+        open= True,
+        )
+
         #AMI
         amzn_linux = ec2.MachineImage.latest_amazon_linux(
             generation=ec2.AmazonLinuxGeneration.AMAZON_LINUX_2,
@@ -116,22 +118,27 @@ class TechgroundsprojectStack(Stack):
         
         #Security group ingress and egress rules
 
-    
-            
+        
+        
+        alb_SG = ec2.SecurityGroup(self, 'AlbSecurityGroup',
+            vpc= self.vpc1, 
+            allow_all_outbound = True,
+            description = ' Techgrounds Project webserver security group'
+            )
 
-        alb_sg.add_ingress_rule(
+        alb_SG.add_ingress_rule(
                 peer=ec2.Peer.any_ipv4(),
                 connection=ec2.Port.tcp(22),
                 description='allow ssh access from the world'
             )
         
-        alb_sg.add_ingress_rule(
+        alb_SG.add_ingress_rule(
                 peer=ec2.Peer.any_ipv4(),
                 connection=ec2.Port.tcp(80),
                 description='HTTP'
             )
             
-        alb_sg.add_ingress_rule(
+        alb_SG.add_ingress_rule(
                 peer=ec2.Peer.any_ipv4(),
                 connection=ec2.Port.tcp(443),
                 description='HTTPS'
@@ -157,7 +164,7 @@ class TechgroundsprojectStack(Stack):
             description='rdp'
         )
 
-        alb_sg.add_ingress_rule(
+        alb_SG.add_ingress_rule(
             ec2.Peer.security_group_id(MgmtServerSG.security_group_id),
             ec2.Port.tcp(22),
             'allow ssh access from the Management Security Group'
@@ -185,9 +192,7 @@ class TechgroundsprojectStack(Stack):
         )
         
         # add target to the ALB listener.Health checks are configured upon creation of a target grou
-        listener= alb.addListener('Listener',
-            port =443,
-            certificate= Certificate,)
+
         listener.add_targets('asg',
         targets=[asg],
         health_check=elbv2.HealthCheck(

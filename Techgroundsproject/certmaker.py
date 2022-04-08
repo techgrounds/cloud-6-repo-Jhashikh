@@ -55,7 +55,7 @@ client_cert.add_extensions([
 client_cert.add_extensions([
     crypto.X509Extension(b'subjectAltName', False,
         ','.join([
-            'DNS:*.example.com'
+            'DNS:*.eu-central-1.elb.amazonaws.com'
 ]).encode())])
 client_cert.set_issuer(ca_subj)
 client_cert.set_pubkey(client_key)

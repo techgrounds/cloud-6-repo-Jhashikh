@@ -56,3 +56,5 @@ command.
  * `cdk docs`        open CDK documentation
 
 Enjoy!
+
+![1649765087484](https://user-images.githubusercontent.com/95621064/165277341-e76fc6fc-646f-42f4-b0c2-3d8f543308a9.jpeg)
